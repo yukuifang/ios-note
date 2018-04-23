@@ -9,10 +9,7 @@
 #import "BackupReciver.h"
 #import <objc/runtime.h>
 #import "Person.h"
-
-
 @interface BackupReciver ()
-
 @end
 
 @implementation BackupReciver

@@ -20,6 +20,12 @@
 		B15F70D4208DB57E003D57E0 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B15F70D3208DB57E003D57E0 /* Person.m */; };
 		B15F70D8208DB945003D57E0 /* MessageDistribution.m in Sources */ = {isa = PBXBuildFile; fileRef = B15F70D6208DB945003D57E0 /* MessageDistribution.m */; };
 		B15F70D9208DB945003D57E0 /* MessageDistribution.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15F70D7208DB945003D57E0 /* MessageDistribution.xib */; };
+		B15F70DD208DCDC4003D57E0 /* AssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = B15F70DB208DCDC4003D57E0 /* AssociatedObjects.m */; };
+		B15F70DE208DCDC4003D57E0 /* AssociatedObjects.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15F70DC208DCDC4003D57E0 /* AssociatedObjects.xib */; };
+		B15F70E1208DD012003D57E0 /* UIView+DefaultColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B15F70E0208DD012003D57E0 /* UIView+DefaultColor.m */; };
+		B15F70E5208DD45D003D57E0 /* MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = B15F70E3208DD45D003D57E0 /* MethodSwizzling.m */; };
+		B15F70E6208DD45D003D57E0 /* MethodSwizzling.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15F70E4208DD45D003D57E0 /* MethodSwizzling.xib */; };
+		B15F70EC208DD508003D57E0 /* UIViewController+LifeCycleTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = B15F70EA208DD508003D57E0 /* UIViewController+LifeCycleTracking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +50,16 @@
 		B15F70D5208DB945003D57E0 /* MessageDistribution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageDistribution.h; sourceTree = "<group>"; };
 		B15F70D6208DB945003D57E0 /* MessageDistribution.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageDistribution.m; sourceTree = "<group>"; };
 		B15F70D7208DB945003D57E0 /* MessageDistribution.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageDistribution.xib; sourceTree = "<group>"; };
+		B15F70DA208DCDC4003D57E0 /* AssociatedObjects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssociatedObjects.h; sourceTree = "<group>"; };
+		B15F70DB208DCDC4003D57E0 /* AssociatedObjects.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssociatedObjects.m; sourceTree = "<group>"; };
+		B15F70DC208DCDC4003D57E0 /* AssociatedObjects.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssociatedObjects.xib; sourceTree = "<group>"; };
+		B15F70DF208DD012003D57E0 /* UIView+DefaultColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DefaultColor.h"; sourceTree = "<group>"; };
+		B15F70E0208DD012003D57E0 /* UIView+DefaultColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+DefaultColor.m"; sourceTree = "<group>"; };
+		B15F70E2208DD45D003D57E0 /* MethodSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodSwizzling.h; sourceTree = "<group>"; };
+		B15F70E3208DD45D003D57E0 /* MethodSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzling.m; sourceTree = "<group>"; };
+		B15F70E4208DD45D003D57E0 /* MethodSwizzling.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MethodSwizzling.xib; sourceTree = "<group>"; };
+		B15F70E9208DD508003D57E0 /* UIViewController+LifeCycleTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LifeCycleTracking.h"; sourceTree = "<group>"; };
+		B15F70EA208DD508003D57E0 /* UIViewController+LifeCycleTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LifeCycleTracking.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +109,14 @@
 		B15F70C7208DB02E003D57E0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B15F70E9208DD508003D57E0 /* UIViewController+LifeCycleTracking.h */,
+				B15F70EA208DD508003D57E0 /* UIViewController+LifeCycleTracking.m */,
+				B15F70E2208DD45D003D57E0 /* MethodSwizzling.h */,
+				B15F70E3208DD45D003D57E0 /* MethodSwizzling.m */,
+				B15F70E4208DD45D003D57E0 /* MethodSwizzling.xib */,
+				B15F70DA208DCDC4003D57E0 /* AssociatedObjects.h */,
+				B15F70DB208DCDC4003D57E0 /* AssociatedObjects.m */,
+				B15F70DC208DCDC4003D57E0 /* AssociatedObjects.xib */,
 				B15F70D5208DB945003D57E0 /* MessageDistribution.h */,
 				B15F70D6208DB945003D57E0 /* MessageDistribution.m */,
 				B15F70D7208DB945003D57E0 /* MessageDistribution.xib */,
@@ -104,6 +128,8 @@
 				B15F70CF208DB477003D57E0 /* BackupReciver.xib */,
 				B15F70D2208DB57E003D57E0 /* Person.h */,
 				B15F70D3208DB57E003D57E0 /* Person.m */,
+				B15F70DF208DD012003D57E0 /* UIView+DefaultColor.h */,
+				B15F70E0208DD012003D57E0 /* UIView+DefaultColor.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -166,11 +192,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B15F70DE208DCDC4003D57E0 /* AssociatedObjects.xib in Resources */,
 				B15F70BE208DA54F003D57E0 /* LaunchScreen.storyboard in Resources */,
 				B15F70D9208DB945003D57E0 /* MessageDistribution.xib in Resources */,
 				B15F70CC208DB07E003D57E0 /* DynamicMethodTheory.xib in Resources */,
 				B15F70BB208DA54F003D57E0 /* Assets.xcassets in Resources */,
 				B15F70D1208DB477003D57E0 /* BackupReciver.xib in Resources */,
+				B15F70E6208DD45D003D57E0 /* MethodSwizzling.xib in Resources */,
 				B15F70B9208DA54F003D57E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,12 +210,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B15F70E1208DD012003D57E0 /* UIView+DefaultColor.m in Sources */,
+				B15F70DD208DCDC4003D57E0 /* AssociatedObjects.m in Sources */,
+				B15F70E5208DD45D003D57E0 /* MethodSwizzling.m in Sources */,
 				B15F70D4208DB57E003D57E0 /* Person.m in Sources */,
 				B15F70B6208DA54F003D57E0 /* ViewController.m in Sources */,
 				B15F70CB208DB07E003D57E0 /* DynamicMethodTheory.m in Sources */,
 				B15F70C1208DA54F003D57E0 /* main.m in Sources */,
 				B15F70D0208DB477003D57E0 /* BackupReciver.m in Sources */,
 				B15F70D8208DB945003D57E0 /* MessageDistribution.m in Sources */,
+				B15F70EC208DD508003D57E0 /* UIViewController+LifeCycleTracking.m in Sources */,
 				B15F70B3208DA54F003D57E0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

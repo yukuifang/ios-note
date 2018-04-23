@@ -9,11 +9,7 @@
 #import "DynamicMethodTheory.h"
 #import <objc/runtime.h>
 #import "Person.h"
-
-
-
 @interface DynamicMethodTheory ()
-
 @end
 
 @implementation DynamicMethodTheory

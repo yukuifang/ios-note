@@ -35,7 +35,8 @@
     return [super methodSignatureForSelector:aSelector];
 }
 /*
-如果在上一步还不能处理未知消息，则唯一能做的就是启用完整的消息转发机制了。 首先它会发送-methodSignatureForSelector:消息获得函数的参数和返回值类型。如果-methodSignatureForSelector:返回nil ，Runtime则会发出 -doesNotRecognizeSelector: 消息，程序这时也就挂掉了。如果返回了一个函数签名，Runtime就会创建一个NSInvocation 对象并发送 -forwardInvocation:消息给目标对象。
+1.如果在上一步还不能处理未知消息，则唯一能做的就是启用完整的消息转发机制了。 首先它会发送-methodSignatureForSelector:消息获得函数的参数和返回值类型。如果-methodSignatureForSelector:返回nil ，Runtime则会发出 -doesNotRecognizeSelector: 消息，程序这时也就挂掉了。如果返回了一个函数签名，Runtime就会创建一个NSInvocation 对象并发送 -forwardInvocation:消息给目标对象。
+ 2. 通过签名，Runtime生成了一个对象anInvocation，发送给了forwardInvocation，我们在forwardInvocation方法里面让Person对象去执行了foo函数。
  */
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
     SEL sel = anInvocation.selector;
@@ -48,7 +49,4 @@
     }
     
 }
-
-
-
 @end
