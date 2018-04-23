@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BXI-28-NLd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="rtA-Kj-0y5">
+            <objects>
+                <navigationController id="BXI-28-NLd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8PW-Bk-lPD">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iVi-5f-5bt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JHf-HG-cnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2090" y="-974"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2O-yP-9CE">
+                                <rect key="frame" x="0.0" y="164" width="375" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="PGb-t4-dwJ"/>
+                                </constraints>
+                                <state key="normal" title="动态方法解析">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toDynamicMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lXL-54-A5m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogV-Nl-A2k">
+                                <rect key="frame" x="0.0" y="247" width="375" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="YRm-qq-ziD"/>
+                                </constraints>
+                                <state key="normal" title="备用接收者">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backupReciver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E5d-nl-Iv6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMt-Ys-vx7">
+                                <rect key="frame" x="0.0" y="323" width="375" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="wuQ-7H-R6V"/>
+                                </constraints>
+                                <state key="normal" title="完整消息转发">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toMessageDistribution:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5hY-B4-KUN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gMt-Ys-vx7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="93D-7a-pwb"/>
+                            <constraint firstItem="gMt-Ys-vx7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AIb-n8-0km"/>
+                            <constraint firstItem="ogV-Nl-A2k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BP1-c9-5Xv"/>
+                            <constraint firstItem="ogV-Nl-A2k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GZT-Mk-EBf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z2O-yP-9CE" secondAttribute="trailing" id="Jtc-b7-8kB"/>
+                            <constraint firstItem="z2O-yP-9CE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Xfk-fh-py4"/>
+                            <constraint firstItem="z2O-yP-9CE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lKs-jL-Wqb"/>
+                            <constraint firstItem="ogV-Nl-A2k" firstAttribute="top" secondItem="z2O-yP-9CE" secondAttribute="bottom" constant="39" id="qex-fE-lbc"/>
+                            <constraint firstItem="gMt-Ys-vx7" firstAttribute="top" secondItem="ogV-Nl-A2k" secondAttribute="bottom" constant="32" id="uIS-fp-i7I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XTB-I4-2wR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1233" y="-975"/>
+        </scene>
+    </scenes>
+</document>
